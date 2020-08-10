@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>ButterflyTest 🔎</title>
+      <link href="/2020/08/10/ButterflyTest/"/>
+      <url>/2020/08/10/ButterflyTest/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="Note-标注-提示块标签"><a href="#Note-标注-提示块标签" class="headerlink" title="Note 标注 提示块标签"></a>Note 标注 提示块标签</h2><div class="note default">            <p>default 提示块标签</p>          </div><div class="note primary no-icon">            <p>primary 提示块标签</p>          </div><div class="note success">            <p>success 提示块标签</p>          </div><div class="note info">            <p>info 提示块标签</p>          </div><div class="note warning">            <p>warning 提示块标签</p>          </div><div class="note danger">            <p>danger 提示块标签</p>          </div></br></br><h2 id="tag-hide"><a href="#tag-hide" class="headerlink" title="tag-hide"></a>tag-hide</h2><blockquote><p><font color="#0099FF"><strong>inline:</strong></font> 在文本里面添加按钮隐藏内容，只限文字<br>  <span class="hide-inline"><button type="button" class="hide-button button--animated" style="background-color: #FF7242;color: #fff">点击查看  </button><span class="hide-content">这是隐藏内容</span></span><br></br><br><font color="#0099FF"><strong>block:</strong></font></p><div class="hide-block"><button type="button" class="hide-button button--animated" style="background-color: #FF7242;color: #fff">点击查看    </button><span class="hide-content"><p>这是隐藏内容&sbquo;可以隐藏很多内容，包括图片，代码块等等</p></span></div></br><font color="#0099FF">**toggle:**</font><div class="hide-toggle" style="border: 1px solid #FF7242"><div class="hide-button toggle-title" style="background-color: #FF7242;color: #fff"><i class="fas fa-caret-right fa-fw"></i><span>点击查看</span></div>    <div class="hide-content"><p>如果你需要展示的内容太多，可以把它隐藏在收缩框里，需要时再把它展开。</p></div></div></br></blockquote><h2 id="Tabs"><a href="#Tabs" class="headerlink" title="Tabs"></a>Tabs</h2><div class="tabs" id="test1"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#test1-1">test1 1</button></li><li class="tab"><button type="button" data-href="#test1-2">test1 2</button></li><li class="tab"><button type="button" data-href="#test1-3">test1 3</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="test1-1"><p><strong>This is Tab 1.</strong></p><button type="button" class="tab-to-top" onclick="scrollToDest($(this).parents('.tabs'),65)"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="test1-2"><p><strong>This is Tab 2.</strong></p><button type="button" class="tab-to-top" onclick="scrollToDest($(this).parents('.tabs'),65)"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="test1-3"><p><strong>This is Tab 3.</strong></p><button type="button" class="tab-to-top" onclick="scrollToDest($(this).parents('.tabs'),65)"><i class="fas fa-arrow-up"></i></button></div></div></div>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>MarkDown部分语法参考...</title>
+      <link href="/2020/08/08/MarkDown%20grammar/"/>
+      <url>/2020/08/08/MarkDown%20grammar/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="New-page-title-level-1-😀"><a href="#New-page-title-level-1-😀" class="headerlink" title="New page title level 1  😀#"></a>New page title level 1  😀#</h1><h2 id="page-title-level-2"><a href="#page-title-level-2" class="headerlink" title="page title level 2"></a>page title level 2</h2><h3 id="page-title-level-3"><a href="#page-title-level-3" class="headerlink" title="page title level 3"></a>page title level 3</h3><h4 id="page-…-level-4"><a href="#page-…-level-4" class="headerlink" title="page ….level 4"></a>page ….level 4</h4><h5 id="level-5-more-than-6…下面就不写了-顶多六级标题"><a href="#level-5-more-than-6…下面就不写了-顶多六级标题" class="headerlink" title="level 5 more than 6…下面就不写了 顶多六级标题"></a>level 5 more than 6…下面就不写了 顶多六级标题</h5><!-- 注释语法 不会显示在浏览器中 --><!-- shortcuts Ctrl + / --><ul><li>[×] Task One <code>task content...</code></li><li>[√] Task Two <code>task content...</code>  </li></ul><p><em>斜体</em>  <em>斜体</em></p><!-- 要换行得在行尾接2个空字符 --><p><strong>粗体</strong><br><strong><em>加粗斜体</em></strong><br><del>删除线</del><br><u>下划线</u>   </p><!-- 添加脚注 --><p>:blush:😊</p><figure class="highlight ruby"><figcaption><span>&#123;.line-numbers&#125;</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">require</span> <span class="string">&#x27;redcarpet&#x27;</span></span><br><span class="line">markdown = Redcarpet.new(<span class="string">&quot;Hello World!&quot;</span>)</span><br><span class="line">puts markdown.to_html</span><br></pre></td></tr></table></figure><p><kbd>Ctrl</kbd>+<kbd>Space</kbd></p><p><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd></p><h2 id="MarkDown-区块"><a href="#MarkDown-区块" class="headerlink" title="MarkDown 区块##"></a>MarkDown 区块##</h2><!-- 嵌套区块 --><blockquote><p>level 1</p><blockquote><p>level 2</p><blockquote><p>level3  </p></blockquote></blockquote></blockquote><h2 id="链接地址"><a href="#链接地址" class="headerlink" title="链接地址_"></a>链接地址_</h2><blockquote><p>文字套链接 bilibili链接   <a href="bilibili.com">bilibili</a>  </p></blockquote><blockquote><p>直接使用链接&lt;bilibili.com&gt;</p></blockquote><blockquote><p>高级链接 调用变量访问[哔哩哔哩][BZ]<br>(这里的解释器似乎不支持)</p></blockquote><blockquote><p>这是一个emoji网站 点击即可复制 🤣 <a href="http://emojihomepage.com/">Emoji</a></p></blockquote><h2 id="MarkDown-pic"><a href="#MarkDown-pic" class="headerlink" title="MarkDown pic"></a>MarkDown pic</h2><blockquote><p><img src= "/img/loading.gif" data-lazy-src="https://static.zhihu.com/heifetz/assets/logo.f6eef033.png" alt="zhihu.com">  </p></blockquote><table><thead><tr><th align="left">Left</th><th align="left">Middle</th><th align="left">Right</th></tr></thead><tbody><tr><td align="left">1</td><td align="left">2</td><td align="left">3</td></tr></tbody></table><table><thead><tr><th align="left">Shortcuts</th><th align="left">Functionality</th></tr></thead><tbody><tr><td align="left">cmd-k v or ctrl-k v</td><td align="left">Open preview to the Side</td></tr><tr><td align="left">cmd-shift-v or</td><td align="left">ctrl-shift-v    Open preview</td></tr><tr><td align="left">ctrl-shift-s</td><td align="left">Sync preview / Sync source</td></tr><tr><td align="left">shift-enter</td><td align="left">Run Code Chunk</td></tr><tr><td align="left">ctrl-shift-enter</td><td align="left">Run all Code Chunks</td></tr><tr><td align="left">cmd-= or cmd-shift-=</td><td align="left">Preview zoom in</td></tr><tr><td align="left">cmd– or cmd-shift-_</td><td align="left">Preview zoom out</td></tr><tr><td align="left">cmd-0</td><td align="left">Preview reset zoom</td></tr><tr><td align="left">esc</td><td align="left">Toggle sidebar TOC</td></tr></tbody></table><blockquote><p><strong>Markdown Preview Enhanced Shotcuts  ☝</strong></p></blockquote><table><thead><tr><th>表头</th><th>表头</th></tr></thead><tbody><tr><td>单元格</td><td>单元格</td></tr><tr><td>单元格</td><td>单元格</td></tr><tr><td>[bz]:bilibili.com</td><td></td></tr></tbody></table><p>选中文字后粘贴网址即可 <a href="https://www.bbstr.net/forums/development/">TerrariaForums</a> </p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> MarkDown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Blog搭建问题与一些话...</title>
+      <link href="/2020/08/08/%E4%B8%80%E4%BA%9B%E8%AF%9D/"/>
+      <url>/2020/08/08/%E4%B8%80%E4%BA%9B%E8%AF%9D/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="🌳-一些话"><a href="#🌳-一些话" class="headerlink" title="🌳　一些话"></a>🌳　一些话</h2><p>今天(<font color="#0F0E0F">2020年4月7日</font> 完成了部分对于Blog主页的美化<br>主要是明白了github将资源提交至CDN,我也将具体的操作写在下文…本人对前端知识所知甚微。<br>所提供的仅仅只是参考价值。</p><h2 id="🌴-CDN-Github"><a href="#🌴-CDN-Github" class="headerlink" title="🌴　CDN  - Github"></a>🌴　CDN  - Github</h2><p>建立新的储存库<br>若从本地上传至远端，则先克隆库至本地，使用命令<font color="#0099FF"><strong>git clone</strong></font> + cloneURL<br>新建资源文件夹，将需要存储至远端的文件放入到资源文件目录，此时可以<font color="#0099FF" ><strong>git status</strong></font>查看库状态。<br><font color="#0099FF"><strong>git add</strong></font> 将文件添加到暂存(添加到索引) 使用 <font color="#0099FF" ><strong>git commit -m</strong> “”</font> 引号内填写对添加文件的描述，最后<font color="#0099FF" > <strong>git push</strong></font> 到Github远端<br>回到Github cdn库 创建<font color="#1C9849" > 发行版( release)</font> 即可在以下网址查看 👇 (个人使用jsDelivr)<br>    <a href="https://cdn.jsdelivr.net/gh/github%E7%94%A8%E6%88%B7/%E5%BA%93@%E5%8F%91%E8%A1%8C%E7%89%88%E5%8F%B7/">https://cdn.jsdelivr.net/gh/github用户/库@发行版号/</a> </p><h2 id="😆-感谢"><a href="#😆-感谢" class="headerlink" title="😆　感谢"></a>😆　感谢</h2><p>感谢访问这个blog！有什么建议可以在QQ&amp;<a href="https://github.com/FreeXMelody">Github</a>上告诉我~！ 😊 &lt;&lt;<br><br/><br><br/></p><blockquote><h2 id="📖-参考"><a href="#📖-参考" class="headerlink" title="📖　参考"></a>📖　参考</h2><p>如果生成时错误 <font color="#BB3B29" >fatal: cannot read property code of undefined</font><br>可能是 <font color="#0099FF" ><strong>package.json</strong></font> 配置出错</p></blockquote>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
