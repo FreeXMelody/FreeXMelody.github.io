@@ -34,7 +34,7 @@ Object.defineProperty(element, 'id', {
     }
 });
 //%c表示css样式
-console.log('%cHello', element);
+//console.log('%cHello', element);
 
 //原作者
 // var re = /x/;
@@ -79,8 +79,10 @@ initTips();
 
 
 //初次加载时的互动
-(function () {
+(function () 
+{
     var text;
+    var text2;
     if (document.referrer != '') {
         var referrer = document.createElement('a');
         referrer.href = document.referrer;
@@ -88,43 +90,44 @@ initTips();
         var domain = referrer.hostname.split('.')[1];
 
         if (domain == 'baidu') {
-            text = '嗨！ 来自 百度搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 mona的个人博客 」</span>';
+            text = '嗨！ 来自 百度搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 缘星星丶的个人博客 」</span>';
         } else if (domain == 'so') {
-            text = '嗨！ 来自 360搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 mona的个人博客 」</span>';
+            text = '嗨！ 来自 360搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 缘星星丶的个人博客 」</span>';
         } else if (domain == 'google') {
-            text = '嗨！ 来自 谷歌搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 mona的个人博客 」</span>';
+            text = '嗨！ 来自 谷歌搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 缘星星丶的个人博客 」</span>';
         }
-    } else {
+    } else 
+    {
         var day = (new Date()).getDate();
         var month = (new Date()).getMonth() + 1;//0为1月 以此类推 什么鬼设定
         var date = month + '-' + day;
         var now = (new Date()).getHours();
         if (now > 23 || now <= 5) {
-            text = '抓住一只夜猫子！哦···简直和缘星星一样··这么晚还不睡觉，明天起的来嘛？Σ(っ °Д °;)っ';
+            text2 = '抓住一只夜猫子！哦···简直和缘星星一样··这么晚还不睡觉，明天起的来嘛？Σ(っ °Д °;)っ';
         } else if (now > 5 && now <= 7) {
-            text = '早上好！一日之计在于晨，美好的一天就要开始了！';
+            text2 = '早上好！一日之计在于晨，美好的一天就要开始了！';
         } else if (now > 7 && now <= 11) {
-            text = '上午好！工作顺利嘛，不要久坐，多起来走动走动哦！';
+            text2 = '上午好！工作顺利嘛，不要久坐，多起来走动走动哦！';
         } else if (now > 11 && now <= 14) {
-            text = '中午了，工作了一个上午，现在是午餐时间！';
+            text2 = '中午了，工作了一个上午，现在是午餐时间！';
         } else if (now > 14 && now <= 17) {
-            text = '午后很容易犯困呢，今天的运动目标完成了吗？';
+            text2 = '午后很容易犯困呢，今天的运动目标完成了吗？';
         } else if (now > 17 && now <= 19) {
-            text = '傍晚了！窗外夕阳的景色很美丽呢，最美不过夕阳红~~';
+            text2 = '傍晚了！窗外夕阳的景色很美丽呢，最美不过夕阳红~~';
         } else if (now > 19 && now <= 21) {
-            text = '晚上好，今天过得怎么样？';
+            text2 = '晚上好，今天过得怎么样？';
         } else if (now > 21 && now <= 23) {
-            text = '已经这么晚了呀，早点休息吧，晚安~~';
+            text2 = '已经这么晚了呀，早点休息吧，晚安~~';
         } else {
-            text = 'Have a nice day!';
+            text2 = 'Have a nice day!';
         }
-
+        // console.log("Output:"+ text2 );
         if (date == '1-1')
             text = '元旦阔乐！！！';
         else if (date == '2-14')
             text = '情人节快乐丫~ （情人节还来这里 你是有多无聊呢 嘻嘻）';
         else if (date == '5-1')
-            text = '劳动节的意义在于放假！！！';
+            text = '劳动节的意义在于放假！！！ヽ(✿ﾟ▽ﾟ)ノ';
         else if (date == '10-1')
             text = '国庆节快乐 哼哼~';
         else if (date == '11-11')
@@ -132,14 +135,15 @@ initTips();
         else if (date == '10-26')
             text = '呼呼 今天是本站作者缘星星丶的生日哦~';
         else if (date == '12-25')
-            text = '圣诞快乐 一年又要过去了呢';
+            text = '圣诞快乐 一年又快要过去了呢';
         else
             text = '欢迎来到<span style="color:#0099cc;">「 缘星星丶的个人博客 」</span>(๑•̀ㅂ•́)و✧';
     }
-    showMessage(text, 12000);
+    showMessage(text + "<br />" + text2, 15000); 
+    // 既然不知道如何分开输出 干脆就合在一起罢
 })();
 
-window.setInterval(showHitokoto, 30000);
+window.setInterval(showHitokoto, 25000);
 
 function showHitokoto() {
     $.getJSON('https://v1.hitokoto.cn/', function (result) {
@@ -149,6 +153,7 @@ function showHitokoto() {
 
 function showMessage(text, timeout) {
     if (Array.isArray(text)) text = text[Math.floor(Math.random() * text.length + 1) - 1];
+    // isArray 判断是否是一个数组  这里应该是false  math.floor 返回小于或等于一个给定数字的最大整数 
     //console.log('showMessage', text);
     $('.message').stop();
     $('.message').html(text).fadeTo(200, 1);
@@ -172,4 +177,15 @@ function initLive2d (){
         $('.hide-button').fadeOut(600)
     })
 }
+function ConsoleLogMsg()
+{
+    console.log(
+        "%c ☁️ 缘星星丶's Blog %c https://fxlabtinystar.cn/",
+        "color: white; background: #0078E7; padding:5px 0;",
+        "padding:4px;border:1px solid #0078E7;"
+      );
+      
+}
 initLive2d();
+ConsoleLogMsg();
+
