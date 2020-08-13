@@ -48,7 +48,6 @@ $(document).on('copy', function () {
     showMessage('你都复制了些什么呀，转载要记得加上出处哦~~', 5000);
 });
 
-
 //鼠标移入和点击事件
 function initTips() {
     $.ajax({
