@@ -3,3 +3,11 @@
 .layout_post .post-copyright .post-copyright-info a {
     text-decoration: none;
 }
+
+/* 页脚版权和 小屋声明向上移动 */
+#footer-wrap {
+    position: relative;
+    padding: 0.9rem 0rem;
+    color: var(--light-grey);
+    text-align: center;
+  }

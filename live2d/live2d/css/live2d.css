@@ -1,10 +1,10 @@
 #landlord {
     user-select: none;
     position: fixed;
-    right: 30px;
-    bottom: 0;
-    width: 280px;
-    height: 250px;
+    right: 100px;
+    bottom: 70px;
+    width: 200px;
+    height: 178.563px;
     z-index: 10000;
     font-size: 0;
     transition: all .3s ease-in-out;
@@ -43,18 +43,18 @@
 
 .hide-button {
     position: absolute;
-    bottom: 10px;
-    right: 0;
+    bottom: -60px;
+    right: -50px;
     /* bottom: 30px; */
     display: none;
     overflow: hidden;
     /* padding: 4px; */
     width: 60px;
-    height: 20px;
-    border: 1px solid rgba(255,137,255,.4);
-    border-radius: 12px;
-    background: rgba(255,137,255,.2);
-    box-shadow: 0 3px 15px 2px rgba(255,137,255,.4);
+    height: 27px;
+    border: 1px solid rgba(23,167,255,.4);
+    border-radius: 2px;
+    background: rgba(0,0,0,.2);
+    box-shadow: 0 3px 15px 2px rgba(0,65,199,.4);
     text-align: center;
     font-size: 12px;
     cursor: pointer;
@@ -62,7 +62,7 @@
 
 .hide-button:hover {
     border: 1px solid #f4a7b9;
-    background: #707070;
+    background: #00000078;
 }
 
 @media (max-width: 860px) {

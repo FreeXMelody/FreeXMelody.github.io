@@ -95,14 +95,14 @@ initTips();
         } else if (domain == 'google') {
             text = '嗨！ 来自 谷歌搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 缘星星丶的个人博客 」</span>';
         }
-    } else 
-    {
+    } 
+
         var day = (new Date()).getDate();
         var month = (new Date()).getMonth() + 1;//0为1月 以此类推 什么鬼设定
         var date = month + '-' + day;
         var now = (new Date()).getHours();
         if (now > 23 || now <= 5) {
-            text2 = '抓住一只夜猫子！哦···简直和缘星星一样··这么晚还不睡觉，明天起的来嘛？Σ(っ °Д °;)っ';
+            text2 = '抓住一只夜猫子！··这么晚还不睡觉，明天起的来嘛？Σ(っ °Д °;)っ';
         } else if (now > 5 && now <= 7) {
             text2 = '早上好！一日之计在于晨，美好的一天就要开始了！';
         } else if (now > 7 && now <= 11) {
@@ -137,10 +137,9 @@ initTips();
             text = '圣诞快乐 一年又快要过去了呢';
         else
             text = '欢迎来到<span style="color:#0099cc;">「 缘星星丶的个人博客 」</span>(๑•̀ㅂ•́)و✧';
-    }
     showMessage(text + "<br />" + text2, 15000); 
     // 既然不知道如何分开输出 干脆就合在一起罢
-})();
+}());
 
 window.setInterval(showHitokoto, 25000);
 
