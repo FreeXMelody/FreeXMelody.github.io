@@ -99,7 +99,9 @@ initTips();
 
         var day = (new Date()).getDate();
         var month = (new Date()).getMonth() + 1;//0为1月 以此类推 什么鬼设定
+        var year = (new Date()).getFullYear(); //  取系统年
         var date = month + '-' + day;
+        var date2 = year + '-' + month + '-'+ day; // 特定日期
         var now = (new Date()).getHours();
         if (now > 23 || now <= 5) {
             text2 = '抓住一只夜猫子！··这么晚还不睡觉，明天起的来嘛？Σ(っ °Д °;)っ';
@@ -135,6 +137,9 @@ initTips();
             text = '呼呼 今天是本站作者缘星星丶的生日哦~';
         else if (date == '12-25')
             text = '圣诞快乐 一年又快要过去了呢';
+        // 2020 七夕
+        else if (date2 == '2020-8-25')
+            text = '不经意间，相遇;不经意间，相惜;不经意间，刻骨;不经意间，铭记;不经意间....看似不经意，但真的很在意....七夕快乐呀！'
         else
             text = '欢迎来到<span style="color:#0099cc;">「 缘星星丶的个人博客 」</span>(๑•̀ㅂ•́)و✧';
     showMessage(text + "<br />" + text2, 15000); 
