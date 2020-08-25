@@ -1,4 +1,4 @@
-/* 版权链接去掉下划线 */
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>/* 版权链接去掉下划线 */
 
 .layout_post .post-copyright .post-copyright-info a {
     text-decoration: none;
@@ -11,3 +11,11 @@
     color: var(--light-grey);
     text-align: center;
   }
+
+/* 添加我自己的字体···折腾好了？ */
+/* 自定义字体 */
+@font-face {
+    font-family: 'webmo';
+    font-display: swap;
+    src: url('/css/webmo.woff2') format('woff2');
+}

@@ -1,4 +1,4 @@
-/* 鱼塘固定宽度 */
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>/* 鱼塘固定宽度 */
 canvas:not(#ribbon-canvas), #web_bg {
     margin-bottom: -0.5rem;
     display: block;
