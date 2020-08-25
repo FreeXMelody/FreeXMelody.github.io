@@ -43,8 +43,8 @@
 
 .hide-button {
     position: absolute;
-    bottom: -60px;
-    right: -50px;
+    bottom: 10px;
+    right: -7px;
     /* bottom: 30px; */
     display: none;
     overflow: hidden;
