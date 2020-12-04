@@ -25,7 +25,7 @@
         <script type="text/javascript">
           $(function () {
             var content = window.localStorage.getItem("KEY_MD_EDITOR_CONTENT");
-            window.md_base_url = window.localStorage.getItem("KEY_MD_EDITOR_BASE_URL");
+          //  window.md_base_url = window.localStorage.getItem("KEY_MD_EDITOR_BASE_URL");
             window.md_editor = editormd("editor", {
               width: "100%",
               height: "100%",
@@ -38,12 +38,12 @@
               toolbarIcons: function() {
                 var icons = editormd.toolbarModes.full;
                 icons = icons.filter(function (i) {return !['fullscreen', 'preview'].includes(i);});
-                icons.push('|', 'load_md', 'md_base_url');
+                icons.push('|', 'load_md'/*, 'md_base_url'*/);
                 return icons;
               },
               toolbarCustomIcons : {
                 load_md: '<input type="file" id="my_file" accept=".md" onchange="md_file_changed()" style="display: none;"><li><a href="javascript:#" onclick="load_md_file()" title="load md" unselectable="on"><i class="fa fa-upload" name="load_md" unselectable="on"></i></a></li>',
-              //  md_base_url: '<input type="text" id="md_base_url" value="'+ window.md_base_url +'" onchange="md_base_url_changed()" style="width: 260px; background-color: #FFFFFF" placeholder="请输入文章地址用以加载相对路径图片"',
+               // md_base_url: '<input type="text" id="md_base_url" value="'+ window.md_base_url +'" onchange="md_base_url_changed()" style="background:transparent; width: 260px;border:1px solid #ffffff" placeholder="请输入文章地址用以加载相对路径图片"',
               },
               lang: {
                 toolbar: {
