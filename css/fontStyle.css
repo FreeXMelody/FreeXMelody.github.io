@@ -1,6 +1,6 @@
 <link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>@font-face {
-    font-family: 'HYChenMeiZiW';
+    font-family: 'webmo';
     font-display: swap;
     font-size: 30px;
-    src: url('/css/CnChenMeiZi.ttf') format('truetype');
+    src: url('/css/webmo.woff2') format('truetype');
 }
