@@ -7,6 +7,10 @@ body {
 	font-size: 15px
 }
 
+a {
+	text-decoration: none;
+}
+
 .wrapper {
 	box-sizing: border-box;
 	width: 90%;
