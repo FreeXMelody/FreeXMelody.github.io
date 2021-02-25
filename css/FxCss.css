@@ -1,0 +1,45 @@
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>/* 版权链接去掉下划线 */
+
+.layout_post .post-copyright .post-copyright-info a {
+    text-decoration: none;
+}
+
+/* 页脚版权和 小屋声明向上移动 */
+#footer-wrap {
+    position: relative;
+    padding: 0.9rem 0rem;
+    color: var(--light-grey);
+    text-align: center;
+  }
+
+/* 添加自己的字体！ */
+/* 自定义字体 */
+@font-face {
+    font-family: 'webmo';
+    font-display: swap;
+    src: url('/css/webmo.woff2') format('woff2');
+}
+
+body {
+    cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur),
+        default;
+}
+a,
+img {
+    cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur),
+        default;
+}
+
+/* aplayer字体调整美化 终于符合我滴博客风格啦！~ 芜湖~ */
+.aplayer-lrc-contents {
+    font-family: 'webmo' !important;
+}
+
+.aplayer.aplayer-fixed .aplayer-lrc {
+    text-shadow: 0px 0px 14px #ffffff !important;
+}
+
+.aplayer .aplayer-lrc p {
+    color: #464646 !important;
+    font-size: 14px !important;
+}

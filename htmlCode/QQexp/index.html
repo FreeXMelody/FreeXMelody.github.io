@@ -1,0 +1,74 @@
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.13.1/lodash.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>QQbq-Helper</title>
+</head>
+<body>
+    <p align="center" class="titl">QQbq-Helper</p>
+    <div id="watch-example">
+        <p align="center" class="keyword_label">
+          输入关键字以开始 👉 &nbsp;
+          <input v-model="keyword">
+        </p>
+        <p align="center">📌 共计&nbsp;<i class="count">{{items.length}}&nbsp;</i> 项</p>
+        <table style="border:1px solid #79A228;padding: 20px auto;">
+            <tr>
+                <td>名称</td>
+                <td>描述</td>
+                <td>标签</td>
+                <td>ID</td>
+                <td>链接</td>
+                </tr>
+            <tr v-for="item in items">
+            <td class="EXPname">{{ item.name }}</td>
+            <td class="desc">{{ item.desc }}</td>
+            <td class="expTag">{{ item.tag }}</td>
+            <td class="ID_index">{{ item.id }}</td>
+            <td class="downloadLink"><a v-bind:href="'https://gxh.vip.qq.com/club/themes/mobile/bq/html/detail.html?id='+item.id">下载地址</a></td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        var watchExampleVM = new Vue({
+          el: '#watch-example',
+          data: {
+            database:[],
+            keyword: '',
+            items: [{
+                name:'加载中……',
+                desc:'',
+                tag:'',
+                id:0,
+            }],
+          },
+          watch: {
+            keyword: function (newQuestion, oldQuestion) {
+              this.debouncedGetAnswer()
+            }
+          },
+          created: function () {
+            this.debouncedGetAnswer = _.debounce(this.getAnswer, 500)
+          },
+          methods: {
+            getAnswer: function () {
+              function check(item){
+                  return (item.id+' '+item.desc+' '+item.name+' '+item.tag).toLowerCase().indexOf(this.keyword.toLowerCase())>=0
+              }
+              this.items=this.database.filter(check,this)
+            }
+          }
+        })
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("GET","https://cdn.jsdelivr.net/gh/byaidu/qqbq-helper/db.json",true);
+        xmlhttp.send();
+        xmlhttp.onreadystatechange=function()
+        {
+            if (xmlhttp.readyState==4 && xmlhttp.status==200)
+            {
+                watchExampleVM.database=JSON.parse(xmlhttp.responseText);
+                watchExampleVM.getAnswer()
+            }
+        }
+    </script>
+</body>
