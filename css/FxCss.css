@@ -43,3 +43,37 @@ img {
     color: #464646 !important;
     font-size: 14px !important;
 }
+
+
+/* 调整aplyer贴底播放器显示 */
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+    left: -66px !important;
+    /* 默认情况下缩进左侧66px，只留一点箭头部分 */
+  }
+  
+  .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+    left: 0 !important;
+    /* 鼠标悬停是左侧缩进归零，完全显示按钮 */
+  }
+
+/* 相册调整 */
+figcaption {
+    display: inline-block !important; 
+}
+
+figure {
+    display: inline-block !important;
+}
+
+.gallery-group {
+    width: 100% !important;
+    margin-top:50px !important;
+}
+
+.figure.gallery-group {
+    float: none !important;
+}
+
+.gallery-group-main {
+    overflow: hidden !important;
+}

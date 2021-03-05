@@ -1,7 +1,18 @@
 a {
     text-decoration: none;
-    color: #248F4A;
+    color: #248f49;
 }
+
+div table tr td {
+    border: #1C703A 1px solid;
+}
+
+/* .desc ,.expTag, .ID_index {
+
+    border-width: 0 1px;
+    border-style: solid;
+    border-color: skyblue;
+} */
 
 .titl {
     font-weight: 300;
