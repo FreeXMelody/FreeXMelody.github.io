@@ -61,9 +61,9 @@ figcaption {
     display: inline-block !important; 
 }
 
-figure {
-    display: inline-block !important;
-}
+/* figure {
+    display: block !important; 导致代码块溢出
+} */
 
 .gallery-group {
     width: 100% !important;
