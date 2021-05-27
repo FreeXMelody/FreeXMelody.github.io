@@ -30,13 +30,12 @@ var element = new Image();
 Object.defineProperty(element, 'id', {
     get: function () {
         /* TODO */
-        showMessage('哈哈，你打开了控制台，是想要看看我的秘密吗？', 5000);
+        showMessage('哈哈，你打开了控制台，是想要看看我的秘密吗？😥', 5000);
     }
 });
 //%c表示css样式
 //console.log('%cHello', element);
 
-//原作者
 // var re = /x/;
 // console.log(re);
 // re.toString = function () {
@@ -45,7 +44,7 @@ Object.defineProperty(element, 'id', {
 // };
 
 $(document).on('copy', function () {
-    showMessage('你都复制了些什么呀，转载要记得加上出处哦~~', 5000);
+    showMessage('你都复制了些什么呀，转载要记得加上出处哦~~ 🧐', 5000);
 });
 
 //鼠标移入和点击事件
@@ -124,28 +123,32 @@ initTips();
         }
         // console.log("Output:"+ text2 );
         if (date == '1-1')
-            text = '元旦阔乐！！！';
+            text = '元旦阔乐！！！新的一年快乐喔！';
         else if (date == '2-14')
             text = '情人节快乐丫~ （情人节还来这里 你是有多无聊呢 嘻嘻）';
         else if (date == '5-1')
             text = '劳动节的意义在于放假！！！ヽ(✿ﾟ▽ﾟ)ノ';
         else if (date == '10-1')
-            text = '国庆节快乐 哼哼~';
+            text = '国庆节快乐 祖国生日快乐！';
         else if (date == '11-11')
-            text = '光棍节欸 今天来这 你是老光棍了把（偷笑）';
+            text = '光棍节欸 今天来这 你是老光棍了吧（😝）';
         else if (date == '10-26')
-            text = '呼呼 今天是本站作者缘星星丶的生日哦~';
+            text = '呼呼 今天是本站作者缘星星丶的生日哦~ 既然今天来这儿了~ 那就送你一个小惊喜吧！🎁'; // 嘻嘻，等我搞会了js再说
         else if (date == '12-25')
-            text = '圣诞快乐 一年又快要过去了呢';
-        // 2020 七夕
-        else if (date2 == '2020-8-25')
-            text = '不经意间，相遇;不经意间，相惜;不经意间，刻骨;不经意间，铭记;不经意间....看似不经意，但真的很在意....七夕快乐呀！'
-        else if (date2 == '2020-10-1')
-            text = '中秋和国庆！快乐哟~';
+            text = '圣诞节快乐呀！🎄';
+        else if (date2 == '12-1')
+            text = '今天是我滴一位朋友的生日！ yy,生日快乐哦！😋~';
+        else if (date2 == '1-1')
+            text = '今天是我滴一位朋友的生日！ zt,生日快乐哦！😋~';
+        else if (date2 == '9-29')
+            text = '今天是我滴一位朋友的生日！ 嘛，如果你恰好看到...好久不见呀!生日快乐哦！😋~';
+        // else if (date2 == '2020-10-1')
+        //     text = '中秋和国庆！快乐哟~'; // 哇 回想那天中秋和国庆是同一天、！、、
             else
             text = '欢迎来到<span style="color:#0099cc;">「 缘星星丶的个人博客 」</span>(๑•̀ㅂ•́)و✧';
     showMessage(text + "<br />" + text2, 15000); 
     // 既然不知道如何分开输出 干脆就合在一起罢
+    // 七夕： 不经意间，相遇;不经意间，相惜;不经意间，刻骨;不经意间，铭记;不经意间....看似不经意，但真的很在意....七夕快乐呀！
 }());
 
 window.setInterval(showHitokoto, 25000);
