@@ -20,6 +20,7 @@
     src: url('/css/webmo.woff2') format('woff2');
 }
 
+/* 自定义光标 */
 body {
     cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur),
         default;
@@ -77,3 +78,23 @@ figcaption {
 .gallery-group-main {
     overflow: hidden !important;
 }
+
+/* 制作海浪分割顶图和内容 */
+/* 注意单分号和双分号都可以识别,除了IE8只支持单冒号的格式 */
+/* #page-header.post-bg::after {
+    content: '';
+    display:block;
+    position: absolute;
+}
+
+#post::before {
+    content: '';
+    display:block;
+    position: absolute;
+}
+
+#post::after {
+    content: '';
+    display:block;
+    position: absolute;
+} */

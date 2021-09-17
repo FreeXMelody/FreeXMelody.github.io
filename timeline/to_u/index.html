@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh_cn" >
+<head>
+  <meta charset="UTF-8">
+  <title>2u_Luo</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .link {
+      background-color: #2B80D5;
+      color: #fff;
+      padding: 2px 5px;
+      font-family:'microsoft yahei';
+      position: absolute;
+      bottom: 10px;
+
+      font-size: 14px;
+      letter-spacing: normal;
+      left: 33%;
+
+      box-shadow: 0px 0px 5px skyblue;
+    }
+
+    .musicbox {
+      width: 287px;
+      height: 87px;
+      position: sticky;
+      left: 0px;
+      bottom: 50%;
+      box-shadow: 0px 0px 5px #a2daefce;
+
+      /* 先隐藏 , 使用js改变其属性 */
+      visibility:hidden; 
+
+    }
+
+    #btnBox {
+      position: absolute;
+      bottom: 20px;
+      height: 64px;
+
+      text-align: center;
+      left: 45%;
+    }
+  </style>
+</head>
+<body>
+  <div id="typedtext"></div>
+<!-- partial -->
+
+
+  <div id="musicbox" class="musicbox">
+    <!-- http://music.163.com/song?id=27570622&userid=497819215 -->
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" auto="0"  width=100% height=86 src="http://music.163.com/outchain/player?type=2&id=27570622&auto=1&height=66"></iframe>
+  </div>
+  <span class="link">嗨,&nbsp;好久不见😊 https://fxlabtinystar&nbsp;.cn&nbsp;/timeline/to_u/index.html</span>
+
+  <div id="btnBox">
+  </div>
+
+
+  <script  src="./script.js"></script>
+</body>
+</html>

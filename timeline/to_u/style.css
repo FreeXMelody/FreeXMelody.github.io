@@ -1,0 +1,39 @@
+body {
+  font-family: 'Waiting for the Sunrise', cursive; 
+  font-size:20px; 
+  text-align: center;
+  /* margin: 10px 50px;  */
+  letter-spacing: 6px; 
+  font-weight: normal;
+  color: #2b2b2b;
+}
+
+.typedtext {
+  width: 20px;
+  margin: auto auto;
+  width: 20px;
+  line-height: 24px;
+}
+
+
+@keyframes blink {
+  0% {
+      opacity: 0;
+  }
+
+  30% {
+      opacity: .5;
+  }
+
+  60% {
+      opacity: 1;
+  }
+
+  90% {
+      opacity: .5;   
+  }
+
+  100% {
+      opacity: 0;
+  }
+}
