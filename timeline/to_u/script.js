@@ -1,5 +1,17 @@
 // set up text to print, each item in array is new line
-var aText = new Array(
+
+var birth = new Date('2021-9-29');
+year = birth.getFullYear();
+month = birth.getMonth() + 1;
+day = birth.getDate();
+// var nowTime = new Date('2021-10-5');
+var nowTime = new Date().getTime();
+var passedSec = Math.round(nowTime - birth)
+console.log('已经过去了约' + Math.ceil(passedSec/86400000) + '天');
+var aText = new Array( 
+"或许当你看到这个网页的时候正值国庆假期,",
+"所以...让我们把时间定格在\u{0231B}" + year + '年' + month + '月' + day + '日' + '......',
+"  ","  ","  ",
 "嗨 , 别来无恙 \u{01F609} ", 
 "......",
 "想来又快要是第二个三年了吧..",
@@ -9,14 +21,15 @@ var aText = new Array(
 "看到这个网页的链接了么?....",
 " 它显示在页面的底部 ",
 "  ",
-"  ",
 "嗯,这是我的博客...这个页面只能通过这个链接访问.",
+" 唔...或是我发给你的二维码 ",
 "  ",
-"  ",
-"hmmm....让我们新开一页吧",
+"这..算是我为你准备的一个小小生日礼物啦....",
+"以独特的方式~~!",
+"原谅JS(JavaScript)才没学多久...所以看起来有些粗糙...",
 // new page
-" 再来点音乐? ",
-" 要开始囖```\u{01F3B5}",
+" 这是它的链接,等它显示完全后点击就可以进入啦!",
+"https://fxlabtinystar.cn/timeline/to_u/specialGift/",
 );
 var iSpeed = 100; // time delay of print out
 var iIndex = 0; // start printing array at this posision
@@ -85,19 +98,7 @@ function playMusic(Array,Callback)
           setTimeout("typewriter(aText)", iSpeed);
          }
 
-         Callback();
         //  isComplete = true;
-}
-
-function Callback() {
-    code = "<input id=\"buttonAA\" type=\"button\" value=\"开始吧!\" id=\"btn\" style=\"background-color: transparent; border: 2px solid #0099cc; text-align: center; padding: 6px 32px; display: inline-block; margin: 0 4px;\">";
-    document.getElementById("btnBox").innerHTML = code;
-    
-    var musicon = document.getElementById("buttonAA").onclick = function () {
-    var audio= new Audio("./HappyBirthday2U.mp3");//这里的路径写上mp3文件在项目中的绝对路径
-    audio.play();//播放
-    
-    }
 }
 
 var newPage = new Array (
@@ -123,7 +124,7 @@ console.log(aText[0]);
 // 可行的js使用数组参数
 // typewriter.apply(this,aText);
 // 插入音乐元素
-playMusic.apply(this,aText,Callback);
+playMusic.apply(this,aText);
 // if (isComplete == true) {
 //     iSpeed = 40;
 //     typewriter.apply(this,newPage);
