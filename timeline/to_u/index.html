@@ -1,73 +1,234 @@
 <!DOCTYPE html>
-<html lang="zh_cn" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>2u_Luo</title>
-  <link rel="stylesheet" href="./style.css">
-  <style>
-    body {
-      background: url(./imgs/2643663.png) no-repeat;
-      background-size:50%;
-      background-position: top center;
-    }
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <style>
+        body {
+            background-color: #DEDEDE;
+            /* background: url(./imgs/pexels-lilartsy-1257894.jpg) no-repeat; */
+        }
 
-    .link {
-      background-color: #2B80D5;
-      color: #fff;
-      padding: 2px 5px;
-      font-family:'microsoft yahei';
-      position: absolute;
-      bottom: 10px;
+        * {
+            box-sizing: border-box;
+            zoom: 105%;
+        }
 
-      font-size: 14px;
-      letter-spacing: normal;
-      left: 33%;
+        .mainBox {
+            width: 800px;
+            height: 500px;
 
-      box-shadow: 0px 0px 5px skyblue;
-    }
+            margin: 100px auto;
+            background-color: rgba(255, 255, 255, 0.364);
+            /* #95f1ba */
+            box-shadow: 0 0 20px #31622cb1 ;
+            border-radius: 10px;
 
-    .musicbox {
-      width: 287px;
-      height: 87px;
-      position: sticky;
-      left: 0px;
-      bottom: 50%;
-      box-shadow: 0px 0px 5px #a2daefce;
+            padding-bottom: 10px;
+            
+            position: relative;
+        }
 
-      /* 先隐藏 , 使用js改变其属性 */
-      visibility:hidden; 
+        .mainBox::after {
+            position:absolute;
+            left: 45%;
+            color: #fff;
+            content: ' ';
 
-    }
+            height: 1px;
+            width: 100px;
 
-    #btnBox {
-      position: absolute;
-      bottom: 20px;
-      height: 64px;
+            display: block;
+            margin-top: 10px;
+            border-bottom: 3px solid #52A84B;
+            border-radius: 1px;
 
-      text-align: center;
-      left: 45%;
-    }
+        }
 
-    #typedtext {
-      color: #1A1A1A;
-    }
-  </style>
+        .controlBox {
+            height: 40px;
+            background-color: #95f1ba;
+
+            position: relative;
+        }
+
+        li {
+            float:right;
+            width: 10px;
+            height: 10px;
+            background-color: #ccc;
+            border-radius: 5px;
+
+            margin-right: 10px;
+
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        li:nth-child(2) {
+            background-color: #4aafda;
+        }
+        li:nth-child(1) {
+            background-color:#ff704f;
+        }
+        li:nth-child(3) {
+            background-color:#ffda7b;
+        }
+
+        .title {
+            font-size: 12px;
+            position: absolute;
+            top: 12px;
+            left: 47%;
+
+            color: #FAFAFA;
+            letter-spacing: .1em;
+        }
+
+        .textBox {
+            overflow-y: auto;
+            height: 435px;
+
+            background-color: #fff;
+        }
+
+        .textBox p { 
+            /* 可以利用js添加 p 标签 , 此样式赋予p标签.可以实现每行的效果 */
+            font-size: 15px;
+            margin-left: 10px;
+            margin: 5px 10px;
+            font-family: 'jdroman';
+
+            letter-spacing: .1em;
+            text-indent: 20px;
+
+            color: #686868;
+            font-weight: 600;
+
+        }
+
+        @font-face {
+            font-family: 'jdroman';
+            src: url('./东京街角的小浪漫.ttf');
+        }
+        .textBox p::first-letter {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* 滚动条美化 */
+        *::-webkit-scrollbar {
+            width: 5px;
+            background-color: #fff;
+        } 
+
+        *::-webkit-scrollbar-thumb {
+            background-color: #68EB9D;
+            -webkit-border-radius:2px;
+        }
+
+
+        .green {
+            width: 100px;
+            height: 100px;
+            background: url(./imgs/g1.png) no-repeat;
+
+            background-size: contain;
+            background-color: transparent;
+            position: absolute;
+
+            top: -60px;
+            left: 20px;
+            z-index: 1;
+        }
+
+        .vine {
+            background:url(./imgs/b38707402dae4e3306caf80e8859bece\ \(1\).png) no-repeat;
+            width: 300px;
+            height: 150px;
+            background-size: cover;
+
+            position: absolute;
+            z-index: -1;
+            right: -75px;
+            bottom: -75px;
+        }
+
+        .vine2 {
+            background:url(./imgs/b38707402dae4e3306caf80e8859bece\ \(1\).png) no-repeat;
+            transform: rotate(180deg);
+            width: 300px;
+            height: 150px;
+            background-size: cover;
+
+            position: absolute;
+            z-index: -1;
+            right: -75px;
+            top: -75px;
+        }
+
+        .butterfly_blue {
+            width: 50px;
+            height: 50px;
+            background: url(./imgs/图层0.png) no-repeat;
+            background-size: contain;
+
+            position: absolute;
+            right: -50px;
+        }
+        .butterfly_green {
+            width: 50px;
+            height: 50px;
+            background: url(./imgs/图层0_39.png) no-repeat;
+            background-size: contain;
+
+            position: absolute;
+            left: -50px;
+            zoom: 80%;
+        }
+    </style>
 </head>
 <body>
-  <div id="typedtext"></div>
-<!-- partial -->
+    <div class="mainBox">
+        <div class="green">
+            <div class="butterfly_blue"></div>
+            <div class="butterfly_green"></div>
+        </div>
+        <div class="vine"></div>
+        <div class="vine2"></div>
 
-
-  <div id="musicbox" class="musicbox">
-    <!-- http://music.163.com/song?id=27570622&userid=497819215 -->
-    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" auto="0"  width=100% height=86 src="http://music.163.com/outchain/player?type=2&id=27570622&auto=1&height=66"></iframe>
-  </div>
-  <span class="link">嗨,&nbsp;好久不见😊 https://fxlabtinystar&nbsp;.cn&nbsp;/timeline/to_u/index.html</span>
-
-  <div id="btnBox">
-  </div>
-
-
-  <script  src="./script.js"></script>
+        <!-- 控制箱 -->
+        <div class="controlBox">
+            <span class="title">💌&nbsp;留言箱</span>
+                
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        
+        <div class="textBox">
+            <!-- 由js添加 -->
+        </div>
+    </div>    
 </body>
+
+<!-- js 部分 , 当小项目练习 就不分开写了 -->
+<script>
+    var strs = [
+    '白苎新袍入嫩凉。春蚕食叶响回廊，禹门已准桃花浪，月殿先收桂子香。',
+    '鹏北海，凤朝阳。又携书剑路茫茫。明年此日青云上，却笑人间举子忙。'
+]
+    var textBox = document.querySelector('.textBox');
+    for (var i = 0; i < strs.length ; i++) {
+        var newStr = document.createElement('p');
+        newStr.innerText = strs[i];
+        textBox.appendChild(newStr);
+        textBox.style.overflowY = 'auto';
+    }
+</script>
+
 </html>
