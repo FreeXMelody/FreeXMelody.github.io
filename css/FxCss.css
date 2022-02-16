@@ -1,4 +1,22 @@
-<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>/* 版权链接去掉下划线 */
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>/* Microsoft Docs Variable Reference */
+.msdoc-container {
+    overflow: hidden; margin-bottom: 10px;
+}
+
+.msdoc-propName {
+    font-weight: 600; font-size: 12px; background-color: #f2f2f2; color: #585858; padding:0 6px 2px; line-height: 160%; font-family: sans-serif;
+}
+
+.msdoc-propType {
+    text-decoration: none; font-size: 14px; font-family: Georgia, serif;
+}
+
+.msdoc-propDesc {
+    display: block; margin: 5px 0px 0px 4px;font-size: 14px; 
+}
+
+
+/* 版权链接去掉下划线 */
 
 .layout_post .post-copyright .post-copyright-info a {
     text-decoration: none;
@@ -98,3 +116,21 @@ figcaption {
     display:block;
     position: absolute;
 } */
+
+
+/* 转大写 */
+.upper {
+    text-transform: uppercase;
+}
+
+/* 居中加粗黑色标题 */
+.bold-title {
+    display:block;
+    width:100%;
+    font: 96px Courier, monospace;
+    text-align: center;
+    color: #3E4349;
+    font-weight: bold;
+}
+
+
