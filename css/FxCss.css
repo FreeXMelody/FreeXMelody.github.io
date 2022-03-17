@@ -33,6 +33,7 @@
 /* 添加自己的字体！ */
 /* 自定义字体 */
 @font-face {
+    /* webmo */
     font-family: 'webmo';
     font-display: swap;
     src: url('/css/webmo.woff2') format('woff2');
