@@ -1,0 +1,22 @@
+.imgBox {
+    background: content-box, no-repeat url(./happy_woman_rejoices_over_her_birthday-512.webp);
+    width: 512px;
+    height: 512px;
+    /* background-color: skyblue; */
+
+    line-height: 512px;
+    margin: 0 auto;
+    margin-left: 15%;
+}
+
+
+.input-wrapper {
+    position: absolute;
+    right: 2%;
+    top: 10%;
+}
+
+@font-face {
+    font-family: AwakenBlack;
+    src: url(./Aa觉醒黑\ 45J.ttf);
+}
