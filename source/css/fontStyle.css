@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'webmo';
+    font-display: swap;
+    font-size: 30px;
+    src: url('/css/webmo.woff2') format('truetype');
+}

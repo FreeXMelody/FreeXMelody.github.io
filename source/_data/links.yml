@@ -1,0 +1,89 @@
+- class_name: 友人の站
+  class_desc: 那些人，那些事
+  link_list:
+    - name: 大白萝卜
+      link: https://imbhj.com/
+      avatar: https://imbhj.com/img/avatar.png
+      descr: 一只爱吃兔子的萝卜🥕
+    - name: FF师傅
+      link: http://lzfblog.cn/
+      avatar: http://lzfblog.cn/upload/2021/02/hdImg_dc7d8da38758d6e9804e0aa483c5b6c916126719000-fcf495f0e32b4c8eb4dd6c3972423568.jpg
+      descr: Tell yourself everyday:I'm really good.
+    - name: Johann.C 陈师长
+      link: https://tgv-duplex.github.io
+      avatar: https://tgv-duplex.github.io/medias/avatar.jpg
+      descr: 机电技术应用小助教~
+
+
+- class_name: 好玩的?~
+  class_desc: 传送至有趣的地方
+  link_list:
+    - name: Youtube
+      link: https://www.youtube.com/
+      avatar: https://i.loli.net/2020/05/14/9ZkGg8v3azHJfM1.png
+      descr: 视频网站
+    - name: Bilibili
+      link: https://www.bilibili.com/
+      avatar: https://i.loli.net/2020/12/16/aHfQJ61wjXuWl84.png
+      descr: 弹幕网，最大的同性交友网站、（雾
+    - name: Steam
+      link: https://steamcommunity.com/
+      avatar: https://i.loli.net/2020/12/16/puFNwbvCq89XHhG.png
+      descr: 游戏社区，当然可不止游戏啦~ 🎁
+
+- class_name: 文档
+  class_desc: 开发参考文档。
+  link_list:
+    - name: w3school
+      link: https://www.w3school.com.cn/
+      descr: Web开发参考网站
+      avatar: https://i.loli.net/2020/12/16/KJGW1BTmP5qstpE.png
+    - name: M D N
+      link: https://developer.mozilla.org/zh-CN/
+      descr: MDN Web Docs
+      avatar: https://i.loli.net/2021/01/27/abTN216R57YoIK3.png
+    - name: W3School_EN
+      link: https://www.w3schools.com/
+      descr: Web开发参考
+      avatar: https://i.loli.net/2021/10/12/9bmCZy7IMlTHPVe.png
+      
+- class_name: 常用工具
+  class_desc: 部分常用工具。
+  link_list:
+    - name: 在线PS
+      link: https://ps.gaoding.com/#/
+      descr: 拥有基本ps功能，执行速度快.
+      avatar: https://i.loli.net/2020/12/16/6V7MNZoq8bPLwyd.png
+    - name: 在线工具库
+      link: https://www.it1352.com/OnLineTools/Index?s=vod&utm_source=vdoai_stories
+      descr: 一个面向开发人员的在线工具库。
+      avatar: https://i.loli.net/2020/12/16/a2C8uBsD6vElRKx.png
+    - name: 哈勃文件分析系统
+      link: https://habo.qq.com/
+      descr: 腾讯旗下哈勃文件分析站
+      avatar: https://i.loli.net/2021/01/25/yK7apADGiZTuU8H.png
+    - name: 在线格式转换
+      link: https://www.aconvert.com/cn/
+      descr: 超棒的在线文件格式转换站点，自带格式说明
+      avatar: https://i.loli.net/2021/02/20/5Re8QDh2tsZ6ofj.png
+
+- class_name: 设计 /. 素材
+  class_desc: 图标 etc.
+  link_list:
+    - name: IconPark
+      link: https://iconpark.bytedance.com/
+      descr: 开源图标库，高质量多主题
+      avatar: https://i.loli.net/2021/01/25/pKRHGJgMfNIxeWb.png
+    - name: IconFinder
+      link: https://www.iconfinder.com/
+      descr: Extensive, made easy.
+      avatar: https://i.loli.net/2021/01/30/WCFEfYjhVs19bGK.png
+
+- class_name: 代码 /. 解决方案
+  class_desc: For developers, by developers
+  link_list:
+    - name: Stack Overflow
+      link: https://stackoverflow.com/
+      avatar: https://i.loli.net/2021/01/30/jvdml3k4cD78YVZ.png
+      descr: 嘿、你栈溢出了！个人大部分问题在StackOverflow得到解决。 
+

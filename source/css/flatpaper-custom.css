@@ -1,0 +1,199 @@
+/* Font pairing: New Tegomin for Latin, webmo from Butterfly for Chinese. */
+@font-face {
+  font-family: "New Tegomin Local";
+  src: url("/css/fonts/new-tegomin-latin.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  unicode-range:
+    U+0000-00FF,
+    U+0131,
+    U+0152-0153,
+    U+02BB-02BC,
+    U+02C6,
+    U+02DA,
+    U+02DC,
+    U+0304,
+    U+0308,
+    U+0329,
+    U+2000-206F,
+    U+20AC,
+    U+2122,
+    U+2191,
+    U+2193,
+    U+2212,
+    U+2215,
+    U+FEFF,
+    U+FFFD;
+}
+@font-face {
+  font-family: "webmo-cjk";
+  src: url("/css/webmo.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  unicode-range:
+    U+2E80-2EFF,
+    U+2F00-2FDF,
+    U+3000-303F,
+    U+31C0-31EF,
+    U+3400-4DBF,
+    U+4E00-9FFF,
+    U+F900-FAFF,
+    U+FE30-FE4F,
+    U+FF00-FFEF;
+}
+
+:root {
+  --font-sans: "New Tegomin Local", "webmo-cjk", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+}
+/* Twikoo replaces #twikoo-comments with #twikoo.twikoo after mounting. */
+.comments-section .twikoo,
+.comments-section .twikoo .tk-comments,
+.comments-section .twikoo .tk-comment,
+.comments-section .twikoo .tk-content,
+.comments-section .twikoo .tk-nick,
+.comments-section .twikoo .tk-tag,
+.comments-section .twikoo .tk-time,
+.comments-section .twikoo .tk-action,
+.comments-section .twikoo .tk-input,
+.comments-section .twikoo .el-input,
+.comments-section .twikoo .el-textarea,
+.comments-section .twikoo input,
+.comments-section .twikoo textarea,
+.comments-section .twikoo select,
+.comments-section .twikoo button,
+.comments-section .twikoo .el-input__inner,
+.comments-section .twikoo .el-textarea__inner,
+.comments-section .twikoo .el-input__count,
+.comments-section .twikoo .el-button {
+  font-family: var(--font-sans) !important;
+}
+.legacy-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0;
+}
+
+.legacy-gallery p {
+  margin: 0;
+}
+
+.legacy-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+}
+
+.legacy-gallery-group {
+  display: grid;
+  grid-template-columns: minmax(120px, 34%) 1fr;
+  gap: 1rem;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 0.9rem;
+  color: inherit;
+  text-decoration: none;
+  border: 1px dashed color-mix(in srgb, currentColor 24%, transparent);
+  border-radius: 0.85rem;
+  background: color-mix(in srgb, var(--paper, #fffaf0) 92%, transparent);
+}
+
+.legacy-gallery-group img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 0.65rem;
+}
+
+.legacy-gallery-group__body {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.legacy-gallery-group__body strong {
+  font-size: 1.08rem;
+}
+
+.legacy-gallery-group__body small {
+  line-height: 1.65;
+  opacity: 0.76;
+}
+
+.legacy-hide {
+  margin: 1rem 0;
+  padding: 0.75rem 0.9rem;
+  border: 1px dashed currentColor;
+  border-radius: 0.6rem;
+}
+
+.legacy-hide--inline {
+  display: inline-block;
+  margin: 0 0.3rem;
+}
+
+.legacy-hide summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.legacy-hide__content {
+  padding-top: 0.75rem;
+}
+
+.legacy-music-link {
+  padding: 0.85rem 1rem;
+  border-left: 4px solid currentColor;
+  background: color-mix(in srgb, currentColor 6%, transparent);
+}
+
+@media (max-width: 600px) {
+  .legacy-gallery-group {
+    grid-template-columns: 1fr;
+  }
+}
+/* Mobile hero sticker safety zone: keep the note clear of the profile card. */
+@media (max-width: 760px) {
+  .home-hero .hero-sticker--note {
+    top: 72% !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: 4% !important;
+    transform: rotate(-8deg) !important;
+  }
+
+  .home-hero .hero-sticker--custom-0 {
+    top: 10% !important;
+    right: 3% !important;
+    bottom: auto !important;
+    left: auto !important;
+    width: 82px !important;
+    transform: rotate(5deg) !important;
+  }
+
+  .home-hero .hero-sticker--custom-1 {
+    top: auto !important;
+    right: 3% !important;
+    bottom: 12% !important;
+    left: auto !important;
+    width: 72px !important;
+    transform: rotate(-5deg) !important;
+  }
+  .home-hero .hero-sticker--custom-2 {
+    top: 15% !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: 3% !important;
+    width: 70px !important;
+    transform: rotate(-4deg) !important;
+  }
+  .home-hero .js-hero-shuffle {
+    display: none;
+  }
+}
+
+
+
+
+

@@ -1,0 +1,10 @@
+/* 鱼塘固定宽度 */
+canvas:not(#ribbon-canvas), #web_bg {
+    margin-bottom: -0.5rem;
+    display: block;
+}
+
+.read-mode #web_bg{
+    /* 背景颜色 */
+    background:#00BBFF;
+}

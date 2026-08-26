@@ -1,0 +1,23 @@
+.DS_Store
+Thumbs.db
+db.json
+*.log
+node_modules/
+public/
+.deploy*/
+id_rsa
+id_rsa.pub
+.migration-backup/
+content-assets-archive/
+# Local migration archives and temporary tooling
+.playwright-cli/
+Blog_fileBackup/
+content-archive/
+output/
+db-*.json
+_config.butterfly*.yml
+主题升级方法-此目录git pull.txt
+editormd/
+themes/butterfly/
+themes/butterfly_new/
+

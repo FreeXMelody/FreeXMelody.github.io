@@ -1,0 +1,188 @@
+# FlatPaper site overrides. Keep theme source unmodified.
+menu:
+  首页:
+    link: /
+    icon: home
+  文章:
+    icon: folder
+    item:
+      归档:
+        link: /archives/
+        icon: archive
+      分类:
+        link: /categories/
+        icon: folder
+      标签:
+        link: /tags/
+        icon: tag
+  摄影:
+    link: /Photograph/
+    icon: image
+  小工具:
+    icon: wrench
+    item:
+      写作:
+        link: /mdEditorInBlog/
+        icon: file-text
+      圈小猫:
+        link: /CatchTheCat/
+        icon: cat
+      扫雷:
+        link: /mineSweeper/
+        icon: grid-3x3
+  友链:
+    link: /link/
+    icon: link
+  关于:
+    link: /about/
+    icon: user
+
+nav:
+  enable: true
+  menu:
+    - title: 在别处
+      item:
+        - name: GitHub
+          link: https://github.com/FreeXMelody
+          icon: github
+
+favicon: /img/siteicon/favicon.ico
+
+background:
+  style: default
+
+profile:
+  role: 白日梦想家✨🍂
+  bio: 我有一个征服世界滴妄想···
+  avatar: https://q2.qlogo.cn/headimg_dl?dst_uin=3047124773&spec=100
+  avatar_shape: circle
+  site_info:
+    posts: /archives/
+    categories: /categories/
+    tags: /tags/
+  social:
+    GitHub: https://github.com/FreeXMelody
+  rss:
+    enable: true
+    path: /atom.xml
+
+welcome:
+  label: 今日份记录
+  title: 星愿小屋
+  text: 学习、创作与生活里，总有一些片段值得被认真收藏。
+  cta_text: 浏览归档
+  cta_link: /archives/
+
+home_hero:
+  enable: true
+  title: 星 愿 🍃
+  subtitle: 星空上的琴弦丶
+  bio: 我们的本性不由我们的能力决定，而是在于我们的选择。
+  avatar: https://q2.qlogo.cn/headimg_dl?dst_uin=3047124773&spec=100
+  avatar_shape: circle
+  image: /images/hero/butterfly-home.jpg
+  mobile_image: true
+  image_overlay: [0.16, 0.28]
+  cta_text: 开始阅读
+  cta_link: "#flatpaper-home-content"
+  cta_background: random
+  hero_links:
+    - name: 归档
+      link: /archives/
+    - name: 分类
+      link: /categories/
+    - name: 标签
+      link: /tags/
+    - name: 关于
+      link: /about/
+  stickers:
+    enable: true
+    draggable: true
+    note_text: 星愿
+    items:
+      - image: /images/stickers/yysls-character-chibi-storybook-v3.png
+        alt: 汉服角色 Q 版贴纸
+        size: 156
+      - image: /images/stickers/matcha-sailor-chibi.png
+        alt: 抹茶海军风 Q 版贴纸
+        size: 138
+      - image: /images/stickers/mint-clover-girl-scene.png
+        alt: 薄荷四叶草少女贴纸
+        size: 146
+
+excerpt_length: 120
+random_posts: 5
+random_posts_pool: 100
+latest_posts:
+  enable: true
+  limit: 5
+related_posts: 4
+post_top_img:
+  mode: fallback
+article:
+  strong_accent: true
+
+search:
+  limit: 0
+
+tags:
+  style: tape
+links:
+  style: tape
+buttons:
+  style: circle
+
+featured:
+  - ComfyUI-FromScratch
+  - Cplusplus-2024
+  - Database-MySQL-Learning
+  - Blender Intro
+featured_autoplay: 5000
+featured_image_zigzag: true
+
+color: green
+tape:
+  enable: true
+note:
+  style: sticky
+  icons: true
+code:
+  theme: simple
+
+comments: twikoo
+twikoo:
+  envId: https://lovely-blini-42152c.netlify.app/.netlify/functions/twikoo
+  cdn: https://cdn.jsdelivr.net/npm/twikoo@1.7.19/dist/twikoo.all.min.js
+artalk:
+  server:
+  site:
+
+fancybox:
+  enable: true
+
+umami:
+  enable: false
+google_analytics:
+  enable: false
+adsense:
+  enable: false
+
+footer:
+  left: '© {year} {name}'
+  powered:
+    enable: true
+    prefix: Powered by Theme
+    name: FlatPaper
+    link: https://github.com/Homulilly/hexo-theme-flatpaper
+
+inject:
+  head:
+    - <link rel="stylesheet" href="/css/flatpaper-custom.css?v=20260826-2">
+  bottom:
+
+
+
+
+
+
+
